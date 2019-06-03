@@ -358,9 +358,6 @@ Wire Wire Line
 	5250 1650 5750 1650
 Wire Wire Line
 	6950 3550 7150 3550
-NoConn ~ 3000 1750
-NoConn ~ 3000 1850
-NoConn ~ 3000 1950
 NoConn ~ 3000 2050
 NoConn ~ 3000 2150
 NoConn ~ 3000 2250
@@ -1041,4 +1038,47 @@ Text Label 8900 2550 0    60   ~ 0
 A1
 Text Label 8900 2450 0    60   ~ 0
 A0
+NoConn ~ 8600 1550
+NoConn ~ 8900 1200
+NoConn ~ 10400 2450
+NoConn ~ 10500 4650
+NoConn ~ 8900 3800
+NoConn ~ 8900 4000
+NoConn ~ 8900 4100
+NoConn ~ 9300 5650
+NoConn ~ 9400 5650
+NoConn ~ 9500 5650
+NoConn ~ 9600 5650
+NoConn ~ 9700 5650
+NoConn ~ 9800 5650
+NoConn ~ 9900 5650
+NoConn ~ 10000 5650
+NoConn ~ 10000 4650
+NoConn ~ 10100 5650
+NoConn ~ 10300 4650
+NoConn ~ 10300 5650
+NoConn ~ 10400 5650
+NoConn ~ 10500 5650
+NoConn ~ 10400 3900
+NoConn ~ 10400 3500
+NoConn ~ 10400 1550
+NoConn ~ 10400 1650
+NoConn ~ 10400 1750
+NoConn ~ 10400 2750
+NoConn ~ 10400 2650
+NoConn ~ 10400 2550
+NoConn ~ 10400 2950
+NoConn ~ 10400 1350
+Text Label 3650 1750 0    50   ~ 0
+A0
+Wire Wire Line
+	3000 1750 3650 1750
+Wire Wire Line
+	3000 1850 3650 1850
+Text Label 3650 1850 0    50   ~ 0
+A1
+Wire Wire Line
+	3000 1950 3650 1950
+Text Label 3650 1950 0    50   ~ 0
+A2
 $EndSCHEMATC
