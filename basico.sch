@@ -61,13 +61,13 @@ $EndComp
 $Comp
 L basico-rescue:PWR_FLAG #FLG04
 U 1 1 560EDE73
-P 1300 3500
-F 0 "#FLG04" H 1300 3595 30  0001 C CNN
-F 1 "PWR_FLAG" H 1300 3680 30  0000 C CNN
-F 2 "" H 1300 3500 60  0000 C CNN
-F 3 "" H 1300 3500 60  0000 C CNN
-	1    1300 3500
-	1    0    0    -1  
+P 1300 3600
+F 0 "#FLG04" H 1300 3695 30  0001 C CNN
+F 1 "PWR_FLAG" H 1300 3780 30  0000 C CNN
+F 2 "" H 1300 3600 60  0000 C CNN
+F 3 "" H 1300 3600 60  0000 C CNN
+	1    1300 3600
+	-1   0    0    1   
 $EndComp
 $Comp
 L basico-rescue:+5VP #PWR05
@@ -154,8 +154,6 @@ Wire Wire Line
 	1600 1750 1600 1850
 Wire Wire Line
 	1600 3450 1800 3450
-Wire Wire Line
-	1300 3550 1600 3550
 Connection ~ 1600 3550
 Wire Wire Line
 	1600 2950 1800 2950
@@ -184,8 +182,6 @@ Connection ~ 1600 1950
 Wire Wire Line
 	1600 1750 1800 1750
 Connection ~ 1600 1850
-Wire Wire Line
-	1300 3550 1300 3500
 $Comp
 L basico-rescue:+3.3VP #PWR07
 U 1 1 57A7A9F3
@@ -362,26 +358,8 @@ NoConn ~ 3000 2050
 NoConn ~ 3000 2150
 NoConn ~ 3000 2250
 NoConn ~ 3000 2350
-NoConn ~ 3000 2450
-NoConn ~ 3000 2550
-NoConn ~ 3000 2650
-NoConn ~ 3000 2750
-NoConn ~ 3000 2850
-NoConn ~ 3000 2950
-NoConn ~ 3000 3050
-NoConn ~ 3000 3150
-NoConn ~ 3000 3250
-NoConn ~ 3000 3350
-NoConn ~ 3000 3450
-NoConn ~ 3000 3550
 NoConn ~ 1800 2050
 NoConn ~ 1800 2350
-NoConn ~ 1800 2650
-NoConn ~ 1800 2750
-NoConn ~ 1800 3050
-NoConn ~ 1800 3150
-NoConn ~ 1800 3250
-NoConn ~ 1800 3350
 NoConn ~ 5750 1750
 NoConn ~ 5750 1850
 NoConn ~ 5750 2050
@@ -389,19 +367,6 @@ NoConn ~ 5750 2150
 NoConn ~ 5750 2250
 NoConn ~ 5750 2350
 NoConn ~ 5750 2450
-NoConn ~ 5750 2550
-NoConn ~ 5750 2650
-NoConn ~ 5750 2750
-NoConn ~ 5750 2850
-NoConn ~ 5750 2950
-NoConn ~ 5750 3050
-NoConn ~ 5750 3150
-NoConn ~ 5750 3250
-NoConn ~ 5750 3350
-NoConn ~ 5750 3450
-NoConn ~ 5750 3550
-NoConn ~ 6950 3250
-NoConn ~ 6950 3350
 NoConn ~ 6950 1850
 Wire Wire Line
 	7150 3550 7150 3750
@@ -455,23 +420,23 @@ Wire Wire Line
 	7000 2050 7450 2050
 NoConn ~ 9350 1350
 Text Label 9250 1200 1    60   ~ 0
-IOREF
+Ar_IOREF
 Text Label 8900 1200 1    60   ~ 0
-Vin
+Ar_Vin
 Text Label 10400 1550 0    60   ~ 0
-13(**)
+Ar_13
 Text Label 10400 1650 0    60   ~ 0
-12(**)
+Ar_12
 Text Label 10400 1750 0    60   ~ 0
-11(**)
+Ar_11
 Text Label 10400 1850 0    60   ~ 0
-10(**)
+Ar_10
 Text Label 10400 1250 0    60   ~ 0
-SDA
+Ar_SDA
 Text Label 10400 1150 0    60   ~ 0
-SCL
+Ar_SCL
 Text Label 10400 1350 0    60   ~ 0
-AREF
+Ar_AREF
 Text Notes 8375 575  0    60   ~ 0
 Shield for Arduino Mega Rev 3
 Text Notes 10700 1000 0    60   ~ 0
@@ -562,7 +527,7 @@ F 3 "" H 9100 1200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8600 1550 0    60   ~ 0
-Reset
+Ar_Reset
 $Comp
 L power:+5V #PWR0102
 U 1 1 56D71D10
@@ -907,137 +872,137 @@ F 3 "" H 9550 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 10400 3150 0    60   ~ 0
-0(Rx0)
+Ar_0
 Text Label 10400 3050 0    60   ~ 0
-1(Tx0)
+Ar_1
 Text Label 10400 2950 0    60   ~ 0
-2(**)
+Ar_2
 Text Label 10400 2850 0    60   ~ 0
-3(**)
+Ar_3
 Text Label 10400 2750 0    60   ~ 0
-4(**)
+Ar_4
 Text Label 10400 2650 0    60   ~ 0
-5(**)
+Ar_5
 Text Label 10400 2550 0    60   ~ 0
-6(**)
+Ar_6
 Text Label 10400 2450 0    60   ~ 0
-7(**)
+Ar_7
 Text Label 10400 2050 0    60   ~ 0
-8(**)
+Ar_8
 Text Label 10400 1950 0    60   ~ 0
-9(**)
+Ar_9
 Text Label 10400 3400 0    60   ~ 0
-14(Tx3)
+Ar_14
 Text Label 10400 3500 0    60   ~ 0
-15(Rx3)
+Ar_15
 Text Label 10400 3600 0    60   ~ 0
-16(Tx2)
+Ar_16
 Text Label 10400 3700 0    60   ~ 0
-17(Rx2)
+Ar_17
 Text Label 10400 3800 0    60   ~ 0
-18(Tx1)
+Ar_18
 Text Label 10400 3900 0    60   ~ 0
-19(Rx1)
+Ar_19
 Text Label 10400 4000 0    60   ~ 0
-20(SDA)
+Ar_20
 Text Label 10400 4100 0    60   ~ 0
-21(SCL)
+Ar_21
 Text Label 9000 5750 1    60   ~ 0
-53(SS)
+Ar_53
 Text Label 9100 5750 1    60   ~ 0
-51(MOSI)
+Ar_51
 Text Label 9200 5650 1    60   ~ 0
-49
+Ar_49
 Text Label 9300 5650 1    60   ~ 0
-47
+Ar_47
 Text Label 9400 5650 1    60   ~ 0
-45
+Ar_45
 Text Label 9500 5650 1    60   ~ 0
-43
+Ar_43
 Text Label 9600 5650 1    60   ~ 0
-41
+Ar_41
 Text Label 9700 5650 1    60   ~ 0
-39
+Ar_39
 Text Label 9800 5650 1    60   ~ 0
-37
+Ar_37
 Text Label 9900 5650 1    60   ~ 0
-35
+Ar_35
 Text Label 10000 5650 1    60   ~ 0
-33
+Ar_33
 Text Label 10200 5650 1    60   ~ 0
-29
+Ar_29
 Text Label 10100 5650 1    60   ~ 0
-31
+Ar_31
 Text Label 10300 5650 1    60   ~ 0
-27
+Ar_27
 Text Label 10400 5650 1    60   ~ 0
-25
+Ar_25
 Text Label 10500 5650 1    60   ~ 0
-23
+Ar_23
 Text Label 9000 4650 1    60   ~ 0
-52(SCK)
+Ar_52
 Text Label 9100 4650 1    60   ~ 0
-50(MISO)
+Ar_50
 Text Label 9200 4650 1    60   ~ 0
-48
+Ar_48
 Text Label 9300 4650 1    60   ~ 0
-46
+Ar_46
 Text Label 9400 4650 1    60   ~ 0
-44
+Ar_44
 Text Label 9500 4650 1    60   ~ 0
-42
+Ar_42
 Text Label 9600 4650 1    60   ~ 0
-40
+Ar_40
 Text Label 9700 4650 1    60   ~ 0
-38
+Ar_38
 Text Label 9800 4650 1    60   ~ 0
-36
+Ar_36
 Text Label 9900 4650 1    60   ~ 0
-34
+Ar_34
 Text Label 10000 4650 1    60   ~ 0
-32
+Ar_32
 Text Label 10100 4650 1    60   ~ 0
-30
+Ar_30
 Text Label 10200 4650 1    60   ~ 0
-28
+Ar_28
 Text Label 10300 4650 1    60   ~ 0
-26
+Ar_26
 Text Label 10400 4650 1    60   ~ 0
-24
+Ar_24
 Text Label 10500 4650 1    60   ~ 0
-22
+Ar_22
 Text Label 8900 4100 0    60   ~ 0
-A15
+Ar_A15
 Text Label 8900 4000 0    60   ~ 0
-A14
+Ar_A14
 Text Label 8900 3900 0    60   ~ 0
-A13
+Ar_A13
 Text Label 8900 3800 0    60   ~ 0
-A12
+Ar_A12
 Text Label 8900 3700 0    60   ~ 0
-A11
+Ar_A11
 Text Label 8900 3600 0    60   ~ 0
-A10
+Ar_A10
 Text Label 8900 3500 0    60   ~ 0
-A9
+Ar_A9
 Text Label 8900 3400 0    60   ~ 0
-A8
+Ar_A8
 Text Label 8900 3150 0    60   ~ 0
-A7
+Ar_A7
 Text Label 8900 3050 0    60   ~ 0
-A6
+Ar_A6
 Text Label 8900 2950 0    60   ~ 0
-A5
+Ar_A5
 Text Label 8900 2850 0    60   ~ 0
-A4
+Ar_A4
 Text Label 8900 2750 0    60   ~ 0
-A3
+Ar_A3
 Text Label 8900 2650 0    60   ~ 0
-A2
+Ar_A2
 Text Label 8900 2550 0    60   ~ 0
-A1
+Ar_A1
 Text Label 8900 2450 0    60   ~ 0
-A0
+Ar_A0
 NoConn ~ 8600 1550
 NoConn ~ 8900 1200
 NoConn ~ 10400 2450
@@ -1070,15 +1035,135 @@ NoConn ~ 10400 2550
 NoConn ~ 10400 2950
 NoConn ~ 10400 1350
 Text Label 3650 1750 0    50   ~ 0
-A0
+Ar_A0
 Wire Wire Line
 	3000 1750 3650 1750
 Wire Wire Line
 	3000 1850 3650 1850
 Text Label 3650 1850 0    50   ~ 0
-A1
+Ar_A1
 Wire Wire Line
 	3000 1950 3650 1950
 Text Label 3650 1950 0    50   ~ 0
-A2
+Ar_A2
+Wire Wire Line
+	5750 3150 5400 3150
+Text Label 5400 3150 0    50   ~ 0
+Ar_3
+Wire Wire Line
+	5750 2750 5400 2750
+Text Label 5400 2750 0    50   ~ 0
+Ar_8
+Wire Wire Line
+	5750 2850 5400 2850
+Text Label 5400 2850 0    50   ~ 0
+Ar_9
+Wire Wire Line
+	5750 2950 5400 2950
+Text Label 5400 2950 0    50   ~ 0
+Ar_10
+Wire Wire Line
+	5750 3050 5400 3050
+Text Label 5400 3050 0    50   ~ 0
+Ar_30
+Wire Wire Line
+	5750 3550 5400 3550
+Text Label 5400 3550 0    50   ~ 0
+Ar_14
+Wire Wire Line
+	3000 2750 3650 2750
+Text Label 3650 2750 0    50   ~ 0
+Ar_16
+Wire Wire Line
+	1800 2750 1250 2750
+Text Label 1250 2750 0    50   ~ 0
+Ar_17
+Wire Wire Line
+	5750 3250 5400 3250
+Text Label 5400 3250 0    50   ~ 0
+Ar_18
+Wire Wire Line
+	5750 2550 5400 2550
+Wire Wire Line
+	5750 2650 5400 2650
+Text Label 5400 2550 0    50   ~ 0
+Ar_20
+Text Label 5400 2650 0    50   ~ 0
+Ar_21
+Wire Wire Line
+	5750 3350 5400 3350
+Wire Wire Line
+	5750 3450 5400 3450
+Wire Wire Line
+	6950 3350 7500 3350
+Wire Wire Line
+	6950 3250 7500 3250
+Wire Wire Line
+	1800 3050 1300 3050
+Wire Wire Line
+	1800 3150 1300 3150
+Wire Wire Line
+	1800 3250 1300 3250
+Wire Wire Line
+	1300 3600 1300 3550
+Wire Wire Line
+	1300 3550 1600 3550
+Wire Wire Line
+	1800 3350 1300 3350
+Text Label 5400 3350 0    50   ~ 0
+Ar_24
+Text Label 7500 3350 0    50   ~ 0
+Ar_26
+Text Label 5400 3450 0    50   ~ 0
+Ar_28
+Text Label 7500 3250 0    50   ~ 0
+Ar_34
+Wire Wire Line
+	3000 3250 3650 3250
+Wire Wire Line
+	3000 3150 3650 3150
+Text Label 3650 3250 0    50   ~ 0
+Ar_36
+Text Label 1300 3050 0    50   ~ 0
+Ar_38
+Text Label 1300 3350 0    50   ~ 0
+Ar_42
+Wire Wire Line
+	3000 3350 3650 3350
+Text Label 3650 3350 0    50   ~ 0
+Ar_40
+Wire Wire Line
+	3000 2950 3650 2950
+Text Label 3650 2950 0    50   ~ 0
+Ar_44
+Text Label 3650 3150 0    50   ~ 0
+Ar_46
+Text Label 1300 3150 0    50   ~ 0
+Ar_48
+Wire Wire Line
+	3000 3450 3650 3450
+Text Label 3650 3450 0    50   ~ 0
+Ar_49
+Wire Wire Line
+	3000 2450 3650 2450
+Wire Wire Line
+	3000 2550 3650 2550
+Wire Wire Line
+	1800 2650 1250 2650
+Text Label 3650 2450 0    50   ~ 0
+Ar_50
+Text Label 1250 2650 0    50   ~ 0
+Ar_51
+Text Label 3650 2550 0    50   ~ 0
+Ar_52
+Wire Wire Line
+	3000 3550 3650 3550
+Text Label 3650 3550 0    50   ~ 0
+Ar_53
+Wire Wire Line
+	3000 3050 3650 3050
+Wire Wire Line
+	3000 2850 3650 2850
+Wire Wire Line
+	3000 2650 3650 2650
 $EndSCHEMATC
