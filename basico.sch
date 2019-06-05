@@ -302,18 +302,18 @@ $EndComp
 $Comp
 L basico-rescue:GNDA #PWR017
 U 1 1 57A7AE5D
-P 5500 2000
-F 0 "#PWR017" H 5500 1750 50  0001 C CNN
-F 1 "GNDA" H 5500 1850 50  0000 C CNN
-F 2 "" H 5500 2000 50  0000 C CNN
-F 3 "" H 5500 2000 50  0000 C CNN
-	1    5500 2000
+P 5100 2000
+F 0 "#PWR017" H 5100 1750 50  0001 C CNN
+F 1 "GNDA" H 5100 1850 50  0000 C CNN
+F 2 "" H 5100 2000 50  0000 C CNN
+F 3 "" H 5100 2000 50  0000 C CNN
+	1    5100 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 1950 5500 1950
+	5750 1950 5100 1950
 Wire Wire Line
-	5500 1950 5500 2000
+	5100 1950 5100 2000
 Wire Wire Line
 	6950 1950 7000 1950
 Wire Wire Line
@@ -354,17 +354,9 @@ Wire Wire Line
 	5250 1650 5750 1650
 Wire Wire Line
 	6950 3550 7150 3550
-NoConn ~ 3000 2050
-NoConn ~ 3000 2150
-NoConn ~ 3000 2250
-NoConn ~ 3000 2350
-NoConn ~ 1800 2050
 NoConn ~ 1800 2350
 NoConn ~ 5750 1750
 NoConn ~ 5750 1850
-NoConn ~ 5750 2050
-NoConn ~ 5750 2150
-NoConn ~ 5750 2250
 NoConn ~ 5750 2350
 NoConn ~ 5750 2450
 NoConn ~ 6950 1850
@@ -1166,4 +1158,44 @@ Wire Wire Line
 	3000 2850 3650 2850
 Wire Wire Line
 	3000 2650 3650 2650
+Text Label 3650 2850 0    50   ~ 0
+Ar_A3
+Text Label 1300 3250 0    50   ~ 0
+Ar_A4
+Text Label 3650 3050 0    50   ~ 0
+Ar_A5
+Wire Wire Line
+	1800 2050 1250 2050
+Text Label 1250 2050 0    50   ~ 0
+Ar_A6
+Wire Wire Line
+	3000 2050 3650 2050
+Text Label 3650 2050 0    50   ~ 0
+Ar_A7
+Wire Wire Line
+	3000 2150 3650 2150
+Text Label 3650 2150 0    50   ~ 0
+Ar_A8
+Wire Wire Line
+	5750 2050 5400 2050
+Wire Wire Line
+	5750 2150 5400 2150
+Wire Wire Line
+	5750 2250 5400 2250
+Text Label 3650 2650 0    50   ~ 0
+Ar_A13
+Text Label 5400 2250 0    50   ~ 0
+Ar_9
+Text Label 5400 2150 0    50   ~ 0
+Ar_10
+Text Label 5400 2050 0    50   ~ 0
+Ar_11
+Wire Wire Line
+	3000 2250 3650 2250
+Wire Wire Line
+	3000 2350 3650 2350
+Text Label 3650 2250 0    50   ~ 0
+Ar_11
+Text Label 3650 2350 0    50   ~ 0
+Ar_4
 $EndSCHEMATC
