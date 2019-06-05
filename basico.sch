@@ -431,80 +431,6 @@ Text Label 10400 1350 0    60   ~ 0
 Ar_AREF
 Text Notes 8375 575  0    60   ~ 0
 Shield for Arduino Mega Rev 3
-Text Notes 10700 1000 0    60   ~ 0
-Holes
-$Comp
-L Connector_Generic:Conn_01x01 P8
-U 1 1 56D70B71
-P 10600 650
-F 0 "P8" V 10700 650 31  0000 C CNN
-F 1 "CONN_01X01" V 10700 650 50  0001 C CNN
-F 2 "footprint:Arduino_1pin" H 10600 650 50  0001 C CNN
-F 3 "" H 10600 650 50  0000 C CNN
-	1    10600 650 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P9
-U 1 1 56D70C9B
-P 10700 650
-F 0 "P9" V 10800 650 31  0000 C CNN
-F 1 "CONN_01X01" V 10800 650 50  0001 C CNN
-F 2 "footprint:Arduino_1pin" H 10700 650 50  0001 C CNN
-F 3 "" H 10700 650 50  0000 C CNN
-	1    10700 650 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P10
-U 1 1 56D70CE6
-P 10800 650
-F 0 "P10" V 10900 650 31  0000 C CNN
-F 1 "CONN_01X01" V 10900 650 50  0001 C CNN
-F 2 "footprint:Arduino_1pin" H 10800 650 50  0001 C CNN
-F 3 "" H 10800 650 50  0000 C CNN
-	1    10800 650 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P11
-U 1 1 56D70D2C
-P 10900 650
-F 0 "P11" V 11000 650 31  0000 C CNN
-F 1 "CONN_01X01" V 11000 650 50  0001 C CNN
-F 2 "footprint:Arduino_1pin" H 10900 650 50  0001 C CNN
-F 3 "" H 10900 650 50  0000 C CNN
-	1    10900 650 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P12
-U 1 1 56D711A2
-P 11000 650
-F 0 "P12" V 11100 650 31  0000 C CNN
-F 1 "CONN_01X01" V 11100 650 50  0001 C CNN
-F 2 "footprint:Arduino_1pin" H 11000 650 50  0001 C CNN
-F 3 "" H 11000 650 50  0000 C CNN
-	1    11000 650 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P13
-U 1 1 56D711F0
-P 11100 650
-F 0 "P13" V 11200 650 31  0000 C CNN
-F 1 "CONN_01X01" V 11200 650 50  0001 C CNN
-F 2 "footprint:Arduino_1pin" H 11100 650 50  0001 C CNN
-F 3 "" H 11100 650 50  0000 C CNN
-	1    11100 650 
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 10600 850 
-NoConn ~ 10700 850 
-NoConn ~ 10800 850 
-NoConn ~ 10900 850 
-NoConn ~ 11000 850 
-NoConn ~ 11100 850 
 Text Notes 9650 1350 0    60   ~ 0
 1
 $Comp
@@ -537,10 +463,6 @@ Wire Wire Line
 	9250 1450 9250 1200
 Wire Wire Line
 	9350 1450 9250 1450
-Wire Notes Line
-	10450 1000 10450 500 
-Wire Notes Line
-	11200 1000 10450 1000
 Wire Notes Line
 	9850 650  9850 475 
 Wire Notes Line
