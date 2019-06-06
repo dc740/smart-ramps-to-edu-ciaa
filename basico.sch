@@ -1107,11 +1107,11 @@ Wire Wire Line
 Text Label 3650 2650 0    50   ~ 0
 Ar_A13
 Text Label 5400 2250 0    50   ~ 0
-Ar_9
+Ar_A9
 Text Label 5400 2150 0    50   ~ 0
-Ar_10
+Ar_A10
 Text Label 5400 2050 0    50   ~ 0
-Ar_11
+Ar_A11
 Wire Wire Line
 	3000 2250 3650 2250
 Wire Wire Line
