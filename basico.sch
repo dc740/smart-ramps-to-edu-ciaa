@@ -37,36 +37,14 @@ F 3 "" H 5850 7250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L basico-rescue:+3.3V #PWR01
-U 1 1 560EB699
-P 5250 1500
-F 0 "#PWR01" H 5250 1460 30  0001 C CNN
-F 1 "+3.3V" H 5250 1610 30  0000 C CNN
-F 2 "" H 5250 1500 60  0000 C CNN
-F 3 "" H 5250 1500 60  0000 C CNN
-	1    5250 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L basico-rescue:+5V #PWR02
-U 1 1 560EB7BE
-P 7350 1450
-F 0 "#PWR02" H 7350 1540 20  0001 C CNN
-F 1 "+5V" H 7350 1600 30  0000 C CNN
-F 2 "" H 7350 1450 60  0000 C CNN
-F 3 "" H 7350 1450 60  0000 C CNN
-	1    7350 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L basico-rescue:PWR_FLAG #FLG04
 U 1 1 560EDE73
-P 1300 3600
-F 0 "#FLG04" H 1300 3695 30  0001 C CNN
-F 1 "PWR_FLAG" H 1300 3780 30  0000 C CNN
-F 2 "" H 1300 3600 60  0000 C CNN
-F 3 "" H 1300 3600 60  0000 C CNN
-	1    1300 3600
+P 700 1900
+F 0 "#FLG04" H 700 1995 30  0001 C CNN
+F 1 "PWR_FLAG" H 700 2080 30  0000 C CNN
+F 2 "" H 700 1900 60  0000 C CNN
+F 3 "" H 700 1900 60  0000 C CNN
+	1    700  1900
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -110,75 +88,12 @@ F 6 "952-1387-ND" H 2050 1950 60  0001 C CNN "Digikey#"
 	2    2050 1950
 	1    0    0    -1  
 $EndComp
-$Comp
-L basico-rescue:GND #PWR06
-U 1 1 57A7A207
-P 7150 3750
-F 0 "#PWR06" H 7150 3750 30  0001 C CNN
-F 1 "GND" H 7150 3680 30  0001 C CNN
-F 2 "" H 7150 3750 60  0000 C CNN
-F 3 "" H 7150 3750 60  0000 C CNN
-	1    7150 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 1750 7150 2550
-Wire Wire Line
-	7150 3450 6950 3450
-Connection ~ 7150 3550
-Wire Wire Line
-	7150 3150 6950 3150
-Connection ~ 7150 3450
-Wire Wire Line
-	7150 3050 6950 3050
-Connection ~ 7150 3150
-Wire Wire Line
-	7150 2950 6950 2950
-Connection ~ 7150 3050
-Wire Wire Line
-	7150 2850 6950 2850
-Connection ~ 7150 2950
-Wire Wire Line
-	7150 2550 6950 2550
-Connection ~ 7150 2850
-Wire Wire Line
-	6950 2650 7150 2650
-Connection ~ 7150 2650
-Wire Wire Line
-	6950 2750 7150 2750
-Connection ~ 7150 2750
-Wire Wire Line
-	6950 1750 7150 1750
-Connection ~ 7150 2550
 Wire Wire Line
 	1600 1750 1600 1850
 Wire Wire Line
-	1600 3450 1800 3450
-Connection ~ 1600 3550
-Wire Wire Line
-	1600 2950 1800 2950
-Connection ~ 1600 3450
-Wire Wire Line
-	1600 2850 1800 2850
-Connection ~ 1600 2950
-Wire Wire Line
-	1600 2550 1800 2550
-Connection ~ 1600 2850
-Wire Wire Line
-	1600 2450 1800 2450
-Connection ~ 1600 2550
-Wire Wire Line
-	1600 2250 1800 2250
-Connection ~ 1600 2450
-Wire Wire Line
-	1600 2150 1800 2150
-Connection ~ 1600 2250
-Wire Wire Line
 	1600 1950 1800 1950
-Connection ~ 1600 2150
 Wire Wire Line
 	1600 1850 1800 1850
-Connection ~ 1600 1950
 Wire Wire Line
 	1600 1750 1800 1750
 Connection ~ 1600 1850
@@ -254,12 +169,12 @@ Borrar si no se quiere \nconexiones entre ambos \nconectores
 $Comp
 L basico-rescue:GNDD #PWR012
 U 1 1 57A7AB5F
-P 1600 3700
-F 0 "#PWR012" H 1600 3450 50  0001 C CNN
-F 1 "GNDD" H 1600 3550 50  0000 C CNN
-F 2 "" H 1600 3700 50  0000 C CNN
-F 3 "" H 1600 3700 50  0000 C CNN
-	1    1600 3700
+P 1000 2000
+F 0 "#PWR012" H 1000 1750 50  0001 C CNN
+F 1 "GNDD" H 1000 1850 50  0000 C CNN
+F 2 "" H 1000 2000 50  0000 C CNN
+F 3 "" H 1000 2000 50  0000 C CNN
+	1    1000 2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -299,21 +214,6 @@ F 3 "" H 7450 2100 50  0000 C CNN
 	1    7450 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L basico-rescue:GNDA #PWR017
-U 1 1 57A7AE5D
-P 5100 2000
-F 0 "#PWR017" H 5100 1750 50  0001 C CNN
-F 1 "GNDA" H 5100 1850 50  0000 C CNN
-F 2 "" H 5100 2000 50  0000 C CNN
-F 3 "" H 5100 2000 50  0000 C CNN
-	1    5100 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 1950 5100 1950
-Wire Wire Line
-	5100 1950 5100 2000
 Wire Wire Line
 	6950 1950 7000 1950
 Wire Wire Line
@@ -344,16 +244,6 @@ Wire Wire Line
 	3000 1650 3450 1650
 Wire Wire Line
 	3450 1650 3450 1400
-Wire Wire Line
-	5250 1650 5250 1500
-Wire Wire Line
-	6950 1650 7350 1650
-Wire Wire Line
-	7350 1650 7350 1450
-Wire Wire Line
-	5250 1650 5750 1650
-Wire Wire Line
-	6950 3550 7150 3550
 NoConn ~ 1800 2350
 NoConn ~ 5750 1750
 NoConn ~ 5750 1850
@@ -361,43 +251,9 @@ NoConn ~ 5750 2350
 NoConn ~ 5750 2450
 NoConn ~ 6950 1850
 Wire Wire Line
-	7150 3550 7150 3750
+	1000 1850 1000 2000
 Wire Wire Line
-	7150 3450 7150 3550
-Wire Wire Line
-	7150 3150 7150 3450
-Wire Wire Line
-	7150 3050 7150 3150
-Wire Wire Line
-	7150 2950 7150 3050
-Wire Wire Line
-	7150 2850 7150 2950
-Wire Wire Line
-	7150 2650 7150 2750
-Wire Wire Line
-	7150 2750 7150 2850
-Wire Wire Line
-	7150 2550 7150 2650
-Wire Wire Line
-	1600 3550 1600 3700
-Wire Wire Line
-	1600 3550 1800 3550
-Wire Wire Line
-	1600 3450 1600 3550
-Wire Wire Line
-	1600 2950 1600 3450
-Wire Wire Line
-	1600 2850 1600 2950
-Wire Wire Line
-	1600 2550 1600 2850
-Wire Wire Line
-	1600 2450 1600 2550
-Wire Wire Line
-	1600 2250 1600 2450
-Wire Wire Line
-	1600 2150 1600 2250
-Wire Wire Line
-	1600 1950 1600 2150
+	1000 1850 1600 1850
 Wire Wire Line
 	1600 1850 1600 1950
 Wire Wire Line
@@ -493,17 +349,6 @@ Wire Wire Line
 	10150 1850 10400 1850
 Wire Wire Line
 	10250 1450 10150 1450
-$Comp
-L power:GND #PWR0103
-U 1 1 56D758F6
-P 8650 5750
-F 0 "#PWR0103" H 8650 5500 50  0001 C CNN
-F 1 "GND" H 8650 5600 50  0000 C CNN
-F 2 "" H 8650 5750 50  0000 C CNN
-F 3 "" H 8650 5750 50  0000 C CNN
-	1    8650 5750
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	11200 6050 8350 6050
 Wire Notes Line
@@ -512,35 +357,6 @@ Text Notes 7900 -1300 0    118  ~ 24
 http://www.proyecto-ciaa.com.ar/
 Text Notes 7850 -250 0    79   Italic 16
 Este diseño puede copiarse para iniciar un poncho simple. \n1) Copiar toda la carpeta "Basico" , renombrando \n   la misma al nombre del poncho.\n2) Renombrar los archivos "basico.xxx" manteniendo \n    las extensiones pero cambiando a un nombre \n    descriptivo del poncho. Evitar acentos, espacios y \n    caracteres ascii esxtendidos.
-Wire Wire Line
-	8650 5350 8650 5750
-Wire Wire Line
-	8650 4850 8650 5350
-Wire Wire Line
-	10750 4850 10750 5350
-Wire Wire Line
-	10750 4550 10750 4850
-Connection ~ 10750 4850
-$Comp
-L power:+5V #PWR0104
-U 1 1 56D75AB8
-P 10750 4550
-F 0 "#PWR0104" H 10750 4400 50  0001 C CNN
-F 1 "+5V" H 10750 4690 50  0000 C CNN
-F 2 "" H 10750 4550 50  0000 C CNN
-F 3 "" H 10750 4550 50  0000 C CNN
-	1    10750 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10750 4850 10600 4850
-Wire Wire Line
-	10750 5350 10600 5350
-Connection ~ 8650 5350
-Wire Wire Line
-	8900 5350 8650 5350
-Wire Wire Line
-	8900 4850 8650 4850
 Wire Wire Line
 	9000 5350 9000 5750
 Wire Wire Line
@@ -1019,9 +835,9 @@ Wire Wire Line
 Wire Wire Line
 	1800 3250 1300 3250
 Wire Wire Line
-	1300 3600 1300 3550
+	700  1900 700  1850
 Wire Wire Line
-	1300 3550 1600 3550
+	700  1850 1000 1850
 Wire Wire Line
 	1800 3350 1300 3350
 Text Label 5400 3350 0    50   ~ 0
@@ -1120,4 +936,44 @@ Text Label 3650 2250 0    50   ~ 0
 Ar_11
 Text Label 3650 2350 0    50   ~ 0
 Ar_4
+NoConn ~ 6950 1650
+NoConn ~ 5750 1650
+Wire Wire Line
+	5100 1950 5100 2000
+Wire Wire Line
+	5750 1950 5100 1950
+$Comp
+L basico-rescue:GNDA #PWR017
+U 1 1 57A7AE5D
+P 5100 2000
+F 0 "#PWR017" H 5100 1750 50  0001 C CNN
+F 1 "GNDA" H 5100 1850 50  0000 C CNN
+F 2 "" H 5100 2000 50  0000 C CNN
+F 3 "" H 5100 2000 50  0000 C CNN
+	1    5100 2000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6950 3450
+NoConn ~ 6950 3550
+NoConn ~ 6950 2550
+NoConn ~ 6950 2650
+NoConn ~ 6950 2750
+NoConn ~ 6950 2850
+NoConn ~ 6950 2950
+NoConn ~ 6950 3050
+NoConn ~ 6950 3150
+NoConn ~ 6950 1750
+Connection ~ 1000 1850
+NoConn ~ 1800 2150
+NoConn ~ 1800 2250
+NoConn ~ 1800 2550
+NoConn ~ 1800 2450
+NoConn ~ 1800 2950
+NoConn ~ 1800 2850
+NoConn ~ 1800 3450
+NoConn ~ 1800 3550
+NoConn ~ 10600 4850
+NoConn ~ 10600 5350
+NoConn ~ 8900 5350
+NoConn ~ 8900 4850
 $EndSCHEMATC
