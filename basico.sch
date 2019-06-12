@@ -39,12 +39,12 @@ $EndComp
 $Comp
 L basico-rescue:PWR_FLAG #FLG04
 U 1 1 560EDE73
-P 700 1900
-F 0 "#FLG04" H 700 1995 30  0001 C CNN
-F 1 "PWR_FLAG" H 700 2080 30  0000 C CNN
-F 2 "" H 700 1900 60  0000 C CNN
-F 3 "" H 700 1900 60  0000 C CNN
-	1    700  1900
+P 7400 3500
+F 0 "#FLG04" H 7400 3595 30  0001 C CNN
+F 1 "PWR_FLAG" H 7400 3680 30  0000 C CNN
+F 2 "" H 7400 3500 60  0000 C CNN
+F 3 "" H 7400 3500 60  0000 C CNN
+	1    7400 3500
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -88,15 +88,6 @@ F 6 "952-1387-ND" H 2050 1950 60  0001 C CNN "Digikey#"
 	2    2050 1950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 1750 1600 1850
-Wire Wire Line
-	1600 1950 1800 1950
-Wire Wire Line
-	1600 1850 1800 1850
-Wire Wire Line
-	1600 1750 1800 1750
-Connection ~ 1600 1850
 $Comp
 L basico-rescue:+3.3VP #PWR07
 U 1 1 57A7A9F3
@@ -164,17 +155,15 @@ Wire Wire Line
 	6550 4450 6750 4450
 Wire Wire Line
 	6750 4450 6750 4400
-Text Notes 5600 4100 0    60   ~ 0
-Borrar si no se quiere \nconexiones entre ambos \nconectores
 $Comp
 L basico-rescue:GNDD #PWR012
 U 1 1 57A7AB5F
-P 1000 2000
-F 0 "#PWR012" H 1000 1750 50  0001 C CNN
-F 1 "GNDD" H 1000 1850 50  0000 C CNN
-F 2 "" H 1000 2000 50  0000 C CNN
-F 3 "" H 1000 2000 50  0000 C CNN
-	1    1000 2000
+P 7700 3600
+F 0 "#PWR012" H 7700 3350 50  0001 C CNN
+F 1 "GNDD" H 7700 3450 50  0000 C CNN
+F 2 "" H 7700 3600 50  0000 C CNN
+F 3 "" H 7700 3600 50  0000 C CNN
+	1    7700 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -251,11 +240,9 @@ NoConn ~ 5750 2350
 NoConn ~ 5750 2450
 NoConn ~ 6950 1850
 Wire Wire Line
-	1000 1850 1000 2000
+	7700 3450 7700 3600
 Wire Wire Line
-	1000 1850 1600 1850
-Wire Wire Line
-	1600 1850 1600 1950
+	7700 3450 7400 3450
 Wire Wire Line
 	7000 2350 7000 2450
 Wire Wire Line
@@ -835,9 +822,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 3250 1300 3250
 Wire Wire Line
-	700  1900 700  1850
-Wire Wire Line
-	700  1850 1000 1850
+	7400 3500 7400 3450
 Wire Wire Line
 	1800 3350 1300 3350
 Text Label 5400 3350 0    50   ~ 0
@@ -953,8 +938,6 @@ F 3 "" H 5100 2000 50  0000 C CNN
 	1    5100 2000
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6950 3450
-NoConn ~ 6950 3550
 NoConn ~ 6950 2550
 NoConn ~ 6950 2650
 NoConn ~ 6950 2750
@@ -963,7 +946,6 @@ NoConn ~ 6950 2950
 NoConn ~ 6950 3050
 NoConn ~ 6950 3150
 NoConn ~ 6950 1750
-Connection ~ 1000 1850
 NoConn ~ 1800 2150
 NoConn ~ 1800 2250
 NoConn ~ 1800 2550
@@ -976,4 +958,13 @@ NoConn ~ 10600 4850
 NoConn ~ 10600 5350
 NoConn ~ 8900 5350
 NoConn ~ 8900 4850
+Connection ~ 7400 3450
+Wire Wire Line
+	7400 3450 6950 3450
+Wire Wire Line
+	6950 3550 6950 3450
+Connection ~ 6950 3450
+NoConn ~ 1800 1750
+NoConn ~ 1800 1850
+NoConn ~ 1800 1950
 $EndSCHEMATC
