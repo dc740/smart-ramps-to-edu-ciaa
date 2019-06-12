@@ -5,13 +5,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Poncho Básico (Editar y colocar el nombre final)"
-Date "2016-08-07"
+Title "Poncho Smart RAMPS para EDU-CIAA-NXP"
+Date "2019-06-11"
 Rev "1.0"
 Comp "Proyecto CIAA - COMPUTADORA INDUSTRIAL ABIERTA ARGENTINA"
 Comment1 "https://github.com/ciaa/Ponchos/tree/master/Basico/doc"
-Comment2 "Autores y Licencia del modelo (Diego Brengi - UNLaM)"
-Comment3 "Autor del poncho (COMPLETAR NOMBRE Y APELLIDO). Ver directorio \"doc\""
+Comment2 "Licencia GPL v3 (Emilio Moretti - UNNOBA)"
+Comment3 "Ing. Moretti Emilio"
 Comment4 ""
 $EndDescr
 $Comp
@@ -58,8 +58,6 @@ F 3 "" H 3450 1400 60  0000 C CNN
 	1    3450 1400
 	1    0    0    -1  
 $EndComp
-Text Notes 2950 7650 0    60   ~ 0
-Luego de abrir el nuevo proyecto:\n1)Editar datos del rótulo.\n2)Editar los archivos del subdirectorio "doc".\n2.1) Agregarse en el archivo de licencia.\n2.2) Colocar info mínima del Poncho en el LEEME.txt\n2.3) Colocar info mínima en el CAMBIOS.txt
 $Comp
 L basico-rescue:Conn_Poncho2P_2x_20x2 XA101
 U 1 1 57A7A0F8
@@ -273,7 +271,7 @@ Ar_SCL
 Text Label 10400 1350 0    60   ~ 0
 Ar_AREF
 Text Notes 8375 575  0    60   ~ 0
-Shield for Arduino Mega Rev 3
+Arduino Mega Rev 3 Headers
 Text Notes 9650 1350 0    60   ~ 0
 1
 $Comp
@@ -340,10 +338,8 @@ Wire Notes Line
 	11200 6050 8350 6050
 Wire Notes Line
 	8350 6050 8350 500 
-Text Notes 7900 -1300 0    118  ~ 24
+Text Notes 3650 6750 0    118  ~ 24
 http://www.proyecto-ciaa.com.ar/
-Text Notes 7850 -250 0    79   Italic 16
-Este diseño puede copiarse para iniciar un poncho simple. \n1) Copiar toda la carpeta "Basico" , renombrando \n   la misma al nombre del poncho.\n2) Renombrar los archivos "basico.xxx" manteniendo \n    las extensiones pero cambiando a un nombre \n    descriptivo del poncho. Evitar acentos, espacios y \n    caracteres ascii esxtendidos.
 Wire Wire Line
 	9000 5350 9000 5750
 Wire Wire Line
@@ -967,4 +963,6 @@ Connection ~ 6950 3450
 NoConn ~ 1800 1750
 NoConn ~ 1800 1850
 NoConn ~ 1800 1950
+Text Notes 1375 675  0    60   ~ 0
+Poncho Smart RAMPS para EDU-CIAA-NXP\n
 $EndSCHEMATC
