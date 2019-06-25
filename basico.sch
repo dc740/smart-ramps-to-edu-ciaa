@@ -6,13 +6,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Poncho Smart RAMPS para EDU-CIAA-NXP"
-Date "2019-06-17"
+Date "2019-06-24"
 Rev "1.0"
 Comp "Proyecto CIAA - COMPUTADORA INDUSTRIAL ABIERTA ARGENTINA"
-Comment1 "https://github.com/ciaa/Ponchos/tree/master/Basico/doc"
+Comment1 "https://github.com/dc740/smart-ramps-to-edu-ciaa"
 Comment2 "Licencia GPL v3 (Emilio Moretti - UNNOBA)"
 Comment3 "Ing. Moretti Emilio"
-Comment4 ""
+Comment4 "Revisor: Nelson Fortunatti"
 $EndDescr
 $Comp
 L basico-rescue:OSHWA #G102
@@ -982,4 +982,39 @@ $EndComp
 Connection ~ 7200 2050
 Wire Wire Line
 	7200 2050 7450 2050
+$Comp
+L Device:LED D1
+U 1 1 5D12DF66
+P 7600 4500
+F 0 "D1" V 7639 4383 50  0000 R CNN
+F 1 "LED" V 7548 4383 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 7600 4500 50  0001 C CNN
+F 3 "~" H 7600 4500 50  0001 C CNN
+	1    7600 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L basico-rescue:+5V #PWR0103
+U 1 1 5D14A06A
+P 7600 4350
+F 0 "#PWR0103" H 7600 4440 20  0001 C CNN
+F 1 "+5V" H 7600 4500 30  0000 C CNN
+F 2 "" H 7600 4350 60  0000 C CNN
+F 3 "" H 7600 4350 60  0000 C CNN
+	1    7600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L basico-rescue:GNDD #PWR0104
+U 1 1 5D16F0C7
+P 7600 4800
+F 0 "#PWR0104" H 7600 4550 50  0001 C CNN
+F 1 "GNDD" H 7600 4650 50  0000 C CNN
+F 2 "" H 7600 4800 50  0000 C CNN
+F 3 "" H 7600 4800 50  0000 C CNN
+	1    7600 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4650 7600 4800
 $EndSCHEMATC
